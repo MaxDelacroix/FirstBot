@@ -3,7 +3,7 @@ import requests
 import json
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = telebot.TeleBot("7651989990:AAG_9z4F3n2HxZfEALIscAC29IhXvzJkhFw")
+bot = telebot.TeleBot("botKey")
 
 def get_ai_response(prompt):
     """Получаем ответ от DeepSeek Chat API"""
@@ -11,7 +11,7 @@ def get_ai_response(prompt):
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
-                "Authorization": "Bearer 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",
+                "Authorization": "BER1",
             },
             json={
                 "model": "deepseek/deepseek-chat-v3-0324:free",
